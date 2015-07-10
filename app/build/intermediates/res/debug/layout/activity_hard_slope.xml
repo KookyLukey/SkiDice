@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_ski_dice"
+    android:label="Hard SlopeStyle"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kooknluke.skidice.HardSlope" >
+
+    <TextView
+        android:id="@+id/txtApres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="How many rails/jumps?"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#16A5D9" />
+
+    <Button
+        android:id="@+id/HJ1"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:background="@drawable/buttonshape"
+        android:textColor="#FFFFFF"
+        android:layout_alignLeft="@+id/txtJump"
+        android:layout_below="@+id/txtJump"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/HR1"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:background="@drawable/buttonshape"
+        android:textColor="#FFFFFF"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/HJ2"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignLeft="@+id/HJ1"
+        android:layout_below="@+id/HJ1"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/buttonshape"
+        android:text="2"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/txtJump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtApres"
+        android:layout_below="@+id/txtApres"
+        android:layout_marginTop="18dp"
+        android:text="Jumps"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#16A5D9" />
+
+    <Button
+        android:id="@+id/HJ3"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignLeft="@+id/HJ2"
+        android:layout_below="@+id/HJ2"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttonshape"
+        android:text="3"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/HJ3"
+        android:layout_below="@+id/HJ3"
+        android:layout_marginTop="26dp"
+        android:text="Rails"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#16A5D9" />
+
+    <Button
+        android:id="@+id/HR2"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignLeft="@+id/HR1"
+        android:layout_below="@+id/HR1"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/buttonshape"
+        android:text="2"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/HR3"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignLeft="@+id/HR2"
+        android:layout_below="@+id/HR2"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/buttonshape"
+        android:text="3"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/HJ1t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/HJ1"
+        android:layout_alignBottom="@+id/HJ1"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/txtJump"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/HJ2t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/HJ2"
+        android:layout_alignBottom="@+id/HJ2"
+        android:layout_alignLeft="@+id/HJ1t"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/HJ3t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/HJ3"
+        android:layout_alignBottom="@+id/HJ3"
+        android:layout_alignLeft="@+id/HJ2t"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/HR1t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/HR1"
+        android:layout_alignBottom="@+id/HR1"
+        android:layout_alignLeft="@+id/HJ3t"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/HR2t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/HR2"
+        android:layout_alignBottom="@+id/HR2"
+        android:layout_alignLeft="@+id/HR1t"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/HR3t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/HR3"
+        android:layout_alignBottom="@+id/HR3"
+        android:layout_alignLeft="@+id/HR2t"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp" />
+
+</RelativeLayout><!-- From: file:/Users/Athena/AndroidstudioProjects/SkiDice/app/src/main/res/layout/activity_hard_slope.xml -->

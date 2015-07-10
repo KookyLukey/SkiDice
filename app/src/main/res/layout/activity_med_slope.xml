@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_ski_dice"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kooknluke.skidice.MedSlope" >
+
+    <TextView
+        android:id="@+id/txtApres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="How many rails/jumps?"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#16A5D9" />
+
+    <TextView
+        android:id="@+id/txtJump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Jumps"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#16A5D9" />
+
+    <Button
+        android:id="@+id/MJ1"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignLeft="@+id/txtJump"
+        android:layout_below="@+id/txtJump"
+        android:background="@drawable/buttonshape"
+        android:text="1"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/MR1"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:background="@drawable/buttonshape"
+        android:text="1"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/MJ2"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/MJ1"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/buttonshape"
+        android:text="2"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/MJ3"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/MJ2"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/buttonshape"
+        android:text="3"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/MR2"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/MR1"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/buttonshape"
+        android:text="2"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MJ3"
+        android:layout_below="@+id/MJ3"
+        android:layout_marginTop="30dp"
+        android:text="Rails"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#16A5D9" />
+
+    <Button
+        android:id="@+id/MR3"
+        android:layout_width="45dp"
+        android:layout_height="42dp"
+        android:layout_alignLeft="@+id/MR2"
+        android:layout_below="@+id/MR2"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/buttonshape"
+        android:text="3"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/MJ1t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MJ1"
+        android:layout_alignBottom="@+id/MJ1"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/txtJump"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/MJ2t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MJ2"
+        android:layout_alignBottom="@+id/MJ2"
+        android:layout_alignLeft="@+id/MJ1t"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/MJ3t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MJ3"
+        android:layout_alignBottom="@+id/MJ3"
+        android:layout_alignLeft="@+id/MJ2t"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/MR1t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MR1"
+        android:layout_alignBottom="@+id/MR1"
+        android:layout_alignLeft="@+id/MJ3t"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/MR2t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MR2"
+        android:layout_alignBottom="@+id/MR2"
+        android:layout_alignLeft="@+id/MR1t"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/MR3t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/MR3"
+        android:layout_alignBottom="@+id/MR3"
+        android:layout_alignLeft="@+id/MR2t"
+        android:text=" "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="15sp" />
+
+</RelativeLayout>

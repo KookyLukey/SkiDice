@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ski Dice</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_jump">Jump</string>
+    <string name="title_activity_rail">Rail</string>
+    <string name="title_activity_slope">Slope</string>
+    <string name="title_activity_slope_select">SlopeSelect</string>
+    <string name="title_activity_easy_slope">EasySlope</string>
+    <string name="title_activity_med_slope">MedSlope</string>
+    <string name="title_activity_hard_slope">HardSlope</string>
+    <string name="title_activity_pro_slope">ProSlope</string>
+    <string name="title_activity_impossibru">Impossibru</string>
+    <string name="title_activity_apres">Apres</string>
+    <string name="title_activity_jump_shake">Jump Shake</string>
+    <string name="title_activity_apres__shake">Apres</string>
+    <string name="title_activity_difficulty__selection">Difficulty Selection</string>
+    <string name="gaper">GAPER</string>
+    <string name="aight">You \'ight</string>
+    <string name="pro">Pro</string>
+    <string name="todd_wallnuts">Todd Wallnuts</string>
+
+</resources>

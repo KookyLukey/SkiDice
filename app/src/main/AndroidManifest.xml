@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kooknluke.skidice"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/die"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Jump"
+            android:label="@string/title_activity_jump" >
+        </activity>
+        <activity
+            android:name=".Rail"
+            android:label="@string/title_activity_rail" >
+        </activity>
+        <activity
+            android:name=".Slope"
+            android:label="@string/title_activity_slope" >
+        </activity>
+        <activity
+            android:name=".SlopeSelect"
+            android:label="@string/title_activity_slope_select" >
+        </activity>
+        <activity
+            android:name=".EasySlope"
+            android:label="@string/title_activity_easy_slope" >
+        </activity>
+        <activity
+            android:name=".MedSlope"
+            android:label="@string/title_activity_med_slope" >
+        </activity>
+        <activity
+            android:name=".HardSlope"
+            android:label="@string/title_activity_hard_slope" >
+        </activity>
+        <activity
+            android:name=".ProSlope"
+            android:label="@string/title_activity_pro_slope" >
+        </activity>
+        <activity
+            android:name=".Impossibru"
+            android:label="@string/title_activity_impossibru" >
+        </activity>
+        <activity
+            android:name=".Apres"
+            android:label="@string/title_activity_apres" >
+        </activity>
+        <activity
+            android:name=".jumpShake"
+            android:label="@string/title_activity_jump_shake"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kooknluke.skidice.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Apres_Shake"
+            android:label="@string/title_activity_apres__shake"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kooknluke.skidice.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Difficulty_Selection"
+            android:label="@string/title_activity_difficulty__selection"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kooknluke.skidice.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
