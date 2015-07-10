@@ -94,6 +94,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.kooknluke.skidice.MainActivity" />
         </activity>
+        <activity
+            android:name=".railShake"
+            android:label="@string/title_activity_rail_shake"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kooknluke.skidice.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

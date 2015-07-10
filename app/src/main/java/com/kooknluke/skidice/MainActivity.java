@@ -1,7 +1,6 @@
 package com.kooknluke.skidice;
 
 import android.support.v7.app.ActionBarActivity;
-import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,8 +25,9 @@ public class MainActivity extends ActionBarActivity {
 //        Button btnRail = (Button) findViewById(R.id.btnRails);
 //        Button btnSlopeStyle = (Button) findViewById(R.id.btnSlope);
         Button btnApres = (Button) findViewById(R.id.btnApres);
-        Button btnShakeJump = (Button) findViewById(R.id.button);
-        Button btnDiffSel = (Button) findViewById(R.id.button2);
+        Button btnShakeJump = (Button) findViewById(R.id.btnJumps);
+        Button btnDiffSel = (Button) findViewById(R.id.btnDifficulty);
+        Button btnShakeRail = (Button) findViewById(R.id.btnRails);
         
         
 //        btnJump.setOnClickListener(new View.OnClickListener() {
@@ -86,6 +86,16 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 // open slope activity when clicked
                 Intent intentSlope = new Intent(context, Difficulty_Selection.class);
+                startActivity(intentSlope);
+            }
+        });
+
+        btnShakeRail.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // open slope activity when clicked
+                Intent intentSlope = new Intent(context, railShake.class);
                 startActivity(intentSlope);
             }
         });

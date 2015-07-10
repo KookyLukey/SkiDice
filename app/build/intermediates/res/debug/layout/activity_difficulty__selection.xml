@@ -4,39 +4,54 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.kooknluke.skidice.Difficulty_Selection">
+    tools:context="com.kooknluke.skidice.Difficulty_Selection"
+    android:background="@drawable/background_ski_dice">
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonshape"
         android:text="@string/gaper"
         android:id="@+id/btnGaper"
+        android:layout_marginTop="66dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="130dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonshape"
         android:text="@string/aight"
         android:id="@+id/btnIght"
         android:layout_below="@+id/btnGaper"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp" />
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonshape"
         android:text="@string/pro"
         android:id="@+id/btnPro"
-        android:layout_below="@+id/btnIght"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/buttonshape"
         android:text="@string/todd_wallnuts"
         android:id="@+id/btnTW"
         android:layout_below="@+id/btnPro"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="36dp" />
 </RelativeLayout>
 <!-- From: file:/Users/Athena/AndroidstudioProjects/SkiDice/app/src/main/res/layout/activity_difficulty__selection.xml -->

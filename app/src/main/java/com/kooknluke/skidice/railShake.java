@@ -14,12 +14,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class jumpShake extends ActionBarActivity {
+public class railShake extends ActionBarActivity {
 
     String sel_diff = "";
-    private Selection jumpSelection = new Selection();
+    private Selection railSelection = new Selection();
     public static final String DIFF_SEL = "prefs_diff";
-    TextView jShakeView;
+    TextView rTxtView;
 
     private SensorManager mSensorManager;
     private float mAccel; // acceleration apart from gravity
@@ -41,47 +41,31 @@ public class jumpShake extends ActionBarActivity {
                 Toast toast = Toast.makeText(getApplicationContext(), "Device has shaken.", Toast.LENGTH_LONG);
                 toast.show();
 
-                String finalTrick;
-                String jumpSwitch = jumpSelection.switchSelector();
-                String jump = jumpSelection.easyJumps();
-
-                finalTrick = jumpSwitch + jump;
-                jShakeView.setText(finalTrick);
+                String finalTrick = railSelection.easyRails();
+                rTxtView.setText(finalTrick);
             }
             else if (mAccel > 12 && sel_diff.equals("Ight")) {
                 Toast toast = Toast.makeText(getApplicationContext(), "Device has shaken.", Toast.LENGTH_LONG);
                 toast.show();
 
-                String finalTrick;
-                String jumpSwitch = jumpSelection.switchSelector();
-                String jump = jumpSelection.medJumps();
-
-                finalTrick = jumpSwitch + jump;
-                jShakeView.setText(finalTrick);
+                String finalTrick = railSelection.medRails();
+                rTxtView.setText(finalTrick);
             }
 
             else if (mAccel > 12 && sel_diff.equals("Pro")) {
                 Toast toast = Toast.makeText(getApplicationContext(), "Device has shaken.", Toast.LENGTH_LONG);
                 toast.show();
 
-                String finalTrick;
-                String jumpSwitch = jumpSelection.switchSelector();
-                String jump = jumpSelection.hardJumps();
-
-                finalTrick = jumpSwitch + jump;
-                jShakeView.setText(finalTrick);
+                String finalTrick = railSelection.hardRails();
+                rTxtView.setText(finalTrick);
             }
 
             else if (mAccel > 12 && sel_diff.equals("Todd Wallnuts")) {
                 Toast toast = Toast.makeText(getApplicationContext(), "Device has shaken.", Toast.LENGTH_LONG);
                 toast.show();
 
-                String finalTrick;
-                String jumpSwitch = jumpSelection.switchSelector();
-                String jump = jumpSelection.proJumps();
-
-                finalTrick = jumpSwitch + jump;
-                jShakeView.setText(finalTrick);
+                String finalTrick = railSelection.proRails();
+                rTxtView.setText(finalTrick);
             }
         }
 
@@ -117,7 +101,7 @@ public class jumpShake extends ActionBarActivity {
         mAccel = 0.00f;
         mAccelCurrent = SensorManager.GRAVITY_EARTH;
         mAccelLast = SensorManager.GRAVITY_EARTH;
-        jShakeView = (TextView) findViewById(R.id.txtShakeJump);
+        rTxtView = (TextView) findViewById(R.id.txtShakeJump);
 
         SharedPreferences settings = getSharedPreferences(DIFF_SEL, 0);
         sel_diff = settings.getString("df", "Nothing");
