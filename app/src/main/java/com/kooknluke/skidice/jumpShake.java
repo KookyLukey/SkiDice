@@ -43,10 +43,45 @@ public class jumpShake extends ActionBarActivity {
                 toast.show();
 
                 String finalTrick = "";
-                String eJumpSwitch = jumpSelection.switchSelector();
-                String easyJump = jumpSelection.easyJumps();
+                String jumpSwitch = jumpSelection.switchSelector();
+                String jump = jumpSelection.medJumps();
 
-                finalTrick = eJumpSwitch + easyJump;
+                finalTrick = jumpSwitch + jump;
+                jShakeView.setText(finalTrick);
+            }
+            else if (mAccel > 12 && sel_diff == "Ight") {
+                Toast toast = Toast.makeText(getApplicationContext(), "Device has shaken.", Toast.LENGTH_LONG);
+                toast.show();
+
+                String finalTrick = "";
+                String jumpSwitch = jumpSelection.switchSelector();
+                String jump = jumpSelection.medJumps();
+
+                finalTrick = jumpSwitch + jump;
+                jShakeView.setText(finalTrick);
+            }
+
+            else if (mAccel > 12 && sel_diff == "Pro") {
+                Toast toast = Toast.makeText(getApplicationContext(), "Device has shaken.", Toast.LENGTH_LONG);
+                toast.show();
+
+                String finalTrick = "";
+                String jumpSwitch = jumpSelection.switchSelector();
+                String jump = jumpSelection.medJumps();
+
+                finalTrick = jumpSwitch + jump;
+                jShakeView.setText(finalTrick);
+            }
+
+            else if (mAccel > 12 && sel_diff == "Todd Wallnuts") {
+                Toast toast = Toast.makeText(getApplicationContext(), "Device has shaken.", Toast.LENGTH_LONG);
+                toast.show();
+
+                String finalTrick = "";
+                String jumpSwitch = jumpSelection.switchSelector();
+                String jump = jumpSelection.medJumps();
+
+                finalTrick = jumpSwitch + jump;
                 jShakeView.setText(finalTrick);
             }
         }
@@ -60,8 +95,8 @@ public class jumpShake extends ActionBarActivity {
         super.onResume();
         mSensorManager.registerListener(mSensorListener, mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), SensorManager.SENSOR_DELAY_NORMAL);
 
-        SharedPreferences settings = getSharedPreferences(DIFF_SEL, 0);
-        sel_diff = settings.getString("df", "Nothing");
+//        SharedPreferences settings = getSharedPreferences(DIFF_SEL, 0);
+//        sel_diff = settings.getString("df", "Nothing");
 
     }
 
