@@ -20,13 +20,12 @@ public class jumpShake extends ActionBarActivity {
     String sel_diff = "";
     private Selection jumpSelection = new Selection();
     public static final String DIFF_SEL = "prefs_diff";
+    TextView jShakeView;
 
     private SensorManager mSensorManager;
     private float mAccel; // acceleration apart from gravity
     private float mAccelCurrent; // current acceleration including gravity
     private float mAccelLast; // last acceleration including gravity
-
-    //TextView jTxtView = (TextView) findViewById(R.id.txtShakeJump);
 
     private final SensorEventListener mSensorListener = new SensorEventListener() {
 
@@ -39,7 +38,7 @@ public class jumpShake extends ActionBarActivity {
             float delta = mAccelCurrent - mAccelLast;
             mAccel = mAccel * 0.9f + delta; // perform low-cut filter
 
-            if (mAccel > 12 && easyJumpSelection.difficulty == "Gaper") {
+            if (mAccel > 12 && sel_diff == "Gaper") {
                 Toast toast = Toast.makeText(getApplicationContext(), "Device has shaken.", Toast.LENGTH_LONG);
                 toast.show();
 
@@ -48,7 +47,7 @@ public class jumpShake extends ActionBarActivity {
                 String easyJump = jumpSelection.easyJumps();
 
                 finalTrick = eJumpSwitch + easyJump;
-                //jTxtView.setText(finalTrick);
+                jShakeView.setText(finalTrick);
             }
         }
 
@@ -82,6 +81,8 @@ public class jumpShake extends ActionBarActivity {
         mAccel = 0.00f;
         mAccelCurrent = SensorManager.GRAVITY_EARTH;
         mAccelLast = SensorManager.GRAVITY_EARTH;
+        jShakeView = (TextView) findViewById(R.id.txtShakeJump);
+
         SharedPreferences settings = getSharedPreferences(DIFF_SEL, 0);
         sel_diff = settings.getString("df", "Nothing");
         Toast toast = Toast.makeText(getApplicationContext(), sel_diff, Toast.LENGTH_LONG);
