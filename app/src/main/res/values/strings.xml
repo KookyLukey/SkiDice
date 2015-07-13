@@ -22,5 +22,6 @@
     <string name="pro">Pro</string>
     <string name="todd_wallnuts">Todd Wallnuts</string>
     <string name="title_activity_rail_shake">Rail</string>
+    <string name="title_activity_shake_slope">shakeSlope</string>
 
 </resources>

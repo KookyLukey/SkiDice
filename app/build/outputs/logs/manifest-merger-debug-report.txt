@@ -169,3 +169,11 @@ ADDED from AndroidManifest.xml:97:9
 		ADDED from AndroidManifest.xml:100:13
 	android:name
 		ADDED from AndroidManifest.xml:98:13
+activity#com.kooknluke.skidice.shakeSlope
+ADDED from AndroidManifest.xml:105:9
+	android:label
+		ADDED from AndroidManifest.xml:107:13
+	android:parentActivityName
+		ADDED from AndroidManifest.xml:108:13
+	android:name
+		ADDED from AndroidManifest.xml:106:13

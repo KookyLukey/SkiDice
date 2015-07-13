@@ -162,6 +162,7 @@
     <string name="title_activity_pro_slope">ProSlope</string>
     <string name="title_activity_rail">Rail</string>
     <string name="title_activity_rail_shake">Rail</string>
+    <string name="title_activity_shake_slope">shakeSlope</string>
     <string name="title_activity_slope">Slope</string>
     <string name="title_activity_slope_select">SlopeSelect</string>
     <string name="todd_wallnuts">Todd Wallnuts</string>

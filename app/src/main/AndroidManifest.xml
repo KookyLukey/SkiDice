@@ -102,6 +102,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.kooknluke.skidice.MainActivity" />
         </activity>
+        <activity
+            android:name=".shakeSlope"
+            android:label="@string/title_activity_shake_slope"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kooknluke.skidice.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

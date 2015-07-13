@@ -28,6 +28,7 @@ public class MainActivity extends ActionBarActivity {
         Button btnShakeJump = (Button) findViewById(R.id.btnJumps);
         Button btnDiffSel = (Button) findViewById(R.id.btnDifficulty);
         Button btnShakeRail = (Button) findViewById(R.id.btnRails);
+        Button btnSlope = (Button) findViewById(R.id.btnSlopeStyle);
         
         
 //        btnJump.setOnClickListener(new View.OnClickListener() {
@@ -96,6 +97,16 @@ public class MainActivity extends ActionBarActivity {
             public void onClick(View v) {
                 // open slope activity when clicked
                 Intent intentSlope = new Intent(context, railShake.class);
+                startActivity(intentSlope);
+            }
+        });
+
+        btnSlope.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // open slope activity when clicked
+                Intent intentSlope = new Intent(context, shakeSlope.class);
                 startActivity(intentSlope);
             }
         });

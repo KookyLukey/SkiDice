@@ -92,7 +92,7 @@ public class railShake extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_jump_shake);
+        setContentView(R.layout.activity_rail_shake);
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
@@ -101,7 +101,7 @@ public class railShake extends ActionBarActivity {
         mAccel = 0.00f;
         mAccelCurrent = SensorManager.GRAVITY_EARTH;
         mAccelLast = SensorManager.GRAVITY_EARTH;
-        rTxtView = (TextView) findViewById(R.id.txtShakeJump);
+        rTxtView = (TextView) findViewById(R.id.rTxtView);
 
         SharedPreferences settings = getSharedPreferences(DIFF_SEL, 0);
         sel_diff = settings.getString("df", "Nothing");
