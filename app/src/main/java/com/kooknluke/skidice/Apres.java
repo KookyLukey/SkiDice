@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class Apres extends ActionBarActivity {
 
@@ -35,7 +34,7 @@ public class Apres extends ActionBarActivity {
             if (mAccel > 12) {
                 final TextView txtApres = (TextView) findViewById(R.id.txtApres);
 
-                String line = "";
+                String line;
 
                 line = mSelection.mApres();
 

@@ -1,7 +1,5 @@
 package com.kooknluke.skidice;
 
-import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -94,9 +92,9 @@ public class Difficulty_Selection extends ActionBarActivity {
         editor.commit();
     }
 
-    public String getDiff(){
-        return difficulty;
-    }
+//    public String getDiff(){
+//        return difficulty;
+//    }
     public void setDiff(String var){
         difficulty = var;
     }

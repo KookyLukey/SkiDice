@@ -4,9 +4,6 @@ import java.util.Random;
 
 public class Selection {
 
-	boolean switchCounter = false;
-	boolean switchOr = false;
-
 	public String[] switchSelect = { "Switch ", "" };
 
 	public String[] jumpSpinsArr = {
@@ -79,7 +76,7 @@ public class Selection {
 
 	public String switchSelector() {
 
-		String switchS = "";
+		String switchS;
 
 		// Randomly select switch or regular
 		Random randomGenerator = new Random(); // Construct a new Random number
@@ -93,7 +90,7 @@ public class Selection {
 
 	public String easyJumps() {
 
-		String easyJ = "";
+		String easyJ;
 
 		// Randomly select switch or regular
 		Random randomGenerator = new Random(); // Construct a new Random number
@@ -109,7 +106,7 @@ public class Selection {
 
 	public String medJumps() {
 
-		String medJ = "";
+		String medJ;
 
 		Random randomGenerator = new Random();
 
@@ -128,11 +125,11 @@ public class Selection {
 					+ grabsArr[randGrab];
 
 		return medJ;
-	};
+	}
 
-	public String hardJumps() {
+    public String hardJumps() {
 
-		String hardJ = "";
+		String hardJ;
 
 		Random randomGenerator = new Random();
 
@@ -161,7 +158,7 @@ public class Selection {
 
 	public String proJumps() {
 
-		String proJ = "";
+		String proJ;
 
 		Random randomGenerator = new Random();
 
@@ -210,7 +207,7 @@ public class Selection {
 
 	public String easyRails() {
 
-		String easyR = "";
+		String easyR;
 
 		easyR = "Side Jump";
 
@@ -219,11 +216,11 @@ public class Selection {
 
 	public String medRails() {
 
-		String medR = "";
+		String medR;
 
 		Random randomGenerator = new Random();
 
-		int switches = randomGenerator.nextInt(2);
+//		int switches = randomGenerator.nextInt(2);
 		int randOff = randomGenerator.nextInt(2);
 		int randOn = randomGenerator.nextInt(2);
 		int FoB = randomGenerator.nextInt(2);
@@ -241,11 +238,11 @@ public class Selection {
 
 	public String hardRails() {
 
-		String hardR = "";
+		String hardR;
 
 		Random randomGenerator = new Random();
 
-		int switches = randomGenerator.nextInt(2);
+//		int switches = randomGenerator.nextInt(2);
 		int randOff = randomGenerator.nextInt(3);
 		int randOn = randomGenerator.nextInt(2);
 		int FoB = randomGenerator.nextInt(2);
@@ -266,7 +263,7 @@ public class Selection {
 
 	public String proRails() {
 
-		String proR = "";
+		String proR;
 
 		Random randomGenerator = new Random();
 
@@ -291,7 +288,7 @@ public class Selection {
 
 	public String mApres() {
 
-		String finalApres = "";
+		String finalApres;
 
 		Random randomGenerator = new Random();
 
