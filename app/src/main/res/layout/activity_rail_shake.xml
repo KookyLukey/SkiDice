@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/rTxtView" />
+        android:id="@+id/rTxtView"
+        android:textSize="32sp" />
 
 </RelativeLayout>
