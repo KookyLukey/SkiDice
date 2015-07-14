@@ -14,7 +14,8 @@
         android:text="Jumps"
         android:id="@+id/jumpView"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#16A5D9" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -24,7 +25,7 @@
         android:layout_below="@+id/jumpView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
-        android:textColor="#16A5D9" />
+        android:textAlignment="center" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,7 +35,7 @@
         android:layout_marginTop="40dp"
         android:layout_below="@+id/jumpTrick1"
         android:layout_centerHorizontal="true"
-        android:textColor="#16A5D9" />
+        android:textAlignment="center" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -44,7 +45,7 @@
         android:layout_below="@+id/jumpTrick2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="38dp"
-        android:textColor="#16A5D9" />
+        android:textAlignment="center" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -53,7 +54,8 @@
         android:text="Rails"
         android:id="@+id/railsView"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#16A5D9" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -63,7 +65,7 @@
         android:layout_below="@+id/railsView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
-        android:textColor="#16A5D9" />
+        android:textAlignment="center" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -73,7 +75,7 @@
         android:layout_below="@+id/railTrick1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:textColor="#16A5D9" />
+        android:textAlignment="center" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -83,7 +85,7 @@
         android:layout_below="@+id/railTrick2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="36dp"
-        android:textColor="#16A5D9" />
+        android:textAlignment="center" />
 
 </RelativeLayout>
 <!-- From: file:/Users/Athena/AndroidstudioProjects/SkiDice/app/src/main/res/layout/activity_shake_slope.xml -->
